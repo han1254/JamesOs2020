@@ -1,7 +1,5 @@
 #include "common.h"
 #include "descriptor_tables.h"
-#include <stdio.h>
-#include "string.h"
 
 extern void gdt_flush(u32int);
 extern void idt_flush(u32int);
@@ -41,7 +39,7 @@ static void init_idt()
 {
 	idt_ptr.limit = sizeof(idt_entry_t) * 256 - 1;
 	idt_ptr.base = (u32int)&idt_entries;
-	printf("test/n");
+	
 
 	memset(&idt_entries, 0, sizeof(idt_entry_t)*256);
 	idt_set_gate( 0, (u32int)isr0 , 0x08, 0x8E);
