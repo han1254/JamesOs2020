@@ -1,3 +1,3 @@
 # 正在构建中...
 
-## [chapter1 环境搭建](docs\book_about_jamesmolloy's_os\chapter1\a1.md)
+## [chapter1 环境搭建](docs/book_about_jamesmolloy's_os/chapter1/a1.md)
