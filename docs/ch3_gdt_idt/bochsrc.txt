@@ -1,0 +1,26 @@
+# 设置虚拟机内存为32MB
+megs: 32
+
+# 设置BIOS镜像
+romimage: file=/home/michael/Downloads/bochs-2.6.11/bios/BIOS-bochs-latest 
+
+# 设置VGA BIOS镜像
+vgaromimage: file=/home/michael/Downloads/bochs-2.6.11/bios/VGABIOS-lgpl-latest
+
+# 
+boot: floppy
+floppya: image="floppy.img", status=inserted
+
+
+# 设置日志文件
+log: bochsout.txt
+
+# 关闭鼠标
+mouse: enabled=0
+
+# 打开键盘
+keyboard: type=mf, serial_delay=250
+
+# 设置硬盘
+ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
+
